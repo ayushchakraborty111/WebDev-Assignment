@@ -1,0 +1,67 @@
+*{
+    margin: 4px;
+    padding: 4px;
+}
+
+body{
+    display: inline-block;
+    bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 10vh;
+    height: 70vh;
+}
+
+.wrap{
+    width: 30vh;
+    height: 60vh;
+    background-color: palegreen;
+    margin-left: 28em;
+    margin-top: 4em;
+    justify-content: center;
+    padding-right: 10em;
+    font-weight: bold;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+dt{
+    font-style: italic;
+    position: sticky;
+    top: 30px;
+    background-color: aqua;
+    height: 15px;
+    width: 50vh;               
+}
+
+.ph{
+    width: 55vh;
+    height: 10vh;
+    background-color: lightseagreen;
+    margin-left: 28em;
+    position: relative;
+    top: 55px;
+}
+
+.ph p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 4px 5px 3px palegreen,
+                3px 3px 2px palegreen,
+                3px 3px 2px rgb(216, 251, 152);
+}
+
+dd{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid darkgreen;
+    width: 45vh;
+    border-style: groove;
+    border-collapse: collapse;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

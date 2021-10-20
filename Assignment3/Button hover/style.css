@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button{
+    height: 4rem;
+    width: 10rem;
+    border: 2px solid orange;
+    background-color: lightyellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    transition: 2s;
+    margin: 5px auto;
+    padding: 5px auto;
+    margin-top: 40px;
+}
+
+button:hover{
+    box-shadow: 5px 5px 5px palegreen,
+                5px 5px 5px lightyellow,
+                5px 5px 5px palegreen,
+                5px 5px 5px lightyellow,
+                5px 5px 5px lightyellow,
+                5px 5px 5px 5px lightyellow;
+    border: 1.5px solid yellowgreen;
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightyellow;
+    transform: scale(1);
+        cursor: pointer;
+}
+
+div{
+    width: 1000px;
+    height: 80px;
+    border: 1.5px solid black;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    animation: 2s 1 loading forwards;
+}
+
+@keyframes loading {
+    from{
+        width: 40px;
+        height: 100px;
+    }
+    to{
+        width: 950px;
+        height: 200px;
+        box-shadow: 5px 5px 5px lightblue,
+                    5px 5px 5px lightblue,
+                    5px 5px 5px black;
+    }
+}
+
+h1{
+    margin-bottom: 400px;
+    margin-left: 180px;
+    position: fixed;
+    color: red;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px black;
+}

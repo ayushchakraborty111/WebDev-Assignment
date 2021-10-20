@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 27px;
+}
+
+ul{
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+    width: 400px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+li{
+    padding: 20px auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li:hover{
+    background-color: darkorange;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.8rem;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width:620px){
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Other animation */
+/* .main-div{
+    background-image: url('https://images2.minutemediacdn.com/image/upload/c_crop,h_1126,w_2000,x_0,y_181/f_auto,q_auto,w_1100/v1554932288/shape/mentalfloss/12531-istock-637790866.jpg');
+    margin-left: 20px auto;
+    width: 50%;
+    height: 550px;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%,50%);
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 260px;
+    transform: scale(1.8,1);
+    animation: 30s linear 1s infinite running slider;
+} */
+
+.wrapper{
+    width: 60vw;
+    height: 500px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+  .slider{
+    float:left
+  }
+  
+  .slider img{
+  
+    height: 500px;
+    width: 60vw;
+  }
+
+.main-div{
+    /* border: 5px solid black; */
+    width: calc(70vw*6);
+    animation:  15s ease infinite slider;
+  }
+  
+
+@keyframes slider {
+    /* Calculate the margin-left for 
+    each of the slides */
+  
+    20% {
+      margin-left: 0px;
+    }
+    
+    40% {
+      margin-left: calc(-60vw * 1);
+    }
+    
+    60% {
+      margin-left: calc(-60vw * 2);
+    }
+
+    80%{
+        margin-left: calc(-60vw * 3);
+    }
+  }
+/* Other animation */
+/* @keyframes slider {
+    0%{
+        background-image: url('https://images2.minutemediacdn.com/image/upload/c_crop,h_1126,w_2000,x_0,y_181/f_auto,q_auto,w_1100/v1554932288/shape/mentalfloss/12531-istock-637790866.jpg');
+    }
+    45%{
+        background-image: url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Zm9vZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+    }
+    65%{
+        background-image: url('https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+        transition: 1ms ease-in-out;    
+    }
+} */
+
+section{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+
+main section figure figcaption button{
+    font-size: 1.5rem;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+main section figure figcaption button:hover{
+    background-color: aqua;
+    color: brown;
+    box-shadow: 5px 5px 5px aquamarine;
+}
+
+figure{
+    width: 300px;
+    border: 1.5px solid gray;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px 5px darkgrey;
+}
+
+figure:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+figure img{
+    height: 150px;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#div1{
+    background-color: orange;
+    width: 350px;
+    height: 350px;
+    border: 1px solid orange;
+    margin: 20px auto;
+}
+
+#div1 p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+#div2{
+    float: right;
+    margin: 20px auto;
+}
+
+article #div1{
+    float: left;
+    margin-right: 0;
+    width: 600px;
+    margin-top: 30px;
+    height: 360px;
+}
+
+article .div2{
+    float: right;
+    margin-top: 20px;
+    padding: auto;
+    margin-right: 20px;
+    border: 1px solid darkgray;
+    box-shadow: 5px 5px 5px darkgray;
+    border-radius: 3%;
+}
+
+article div form{
+    padding: 10px;
+    width: 500px;
+    height: 348px;
+}
+
+article div form input{
+    justify-content: space-between;
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+    border: 1.5px solid orange;
+    color: orange;
+}
+
+article div form textarea{
+    width: 430px;
+    margin-left: 20px;
+    border: 1.5px solid orange;
+}
+
+article div form button{
+    width: 430px;
+    margin-left: 20px;
+    height: 40px;
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+}
+
+/* #image1{
+    width: 50px;
+    margin-left: 400px;
+}
+
+#image2{
+    width: 100px;
+}
+
+footer div #image3{
+    width: 70px;
+    margin-top: 60px;
+}
+
+hr{
+    border: 0.5px solid black;
+}
+
+#image1:hover{
+    animation: 2s 1 linear slideup;
+}
+
+#image2:hover{
+    animation: 2s 1 linear slideup1;
+}
+
+#image3:hover{
+    animation: 2s 1 linear slideup2;
+}
+
+@keyframes slideup {
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(20%,-5%);
+    }
+}
+
+@keyframes slideup1 {
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(20%,-5%);
+    }
+}
+
+@keyframes slideup2 {
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(20%,-5%);
+    }
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+} */

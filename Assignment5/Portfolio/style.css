@@ -1,0 +1,70 @@
+.list-group-item:hover{
+    background-color: lightgrey;
+}
+
+.col .bg-light img{
+    width: 200px;
+    height: 150px;
+}
+
+/* nav{
+    width: 1000px;
+}
+
+.col div{
+    width: 1000px;
+    height: max-content;
+} */
+
+ul{
+    list-style: none;
+}
+
+/* .v1{
+    width: 900px;
+    border: 2px solid black;
+} */
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+
+nav ul{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: unset;
+    margin-top: 25px;
+    align-items: center;
+}
+
+nav li{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:620px){
+    nav,nav ul{
+        flex-direction: column;
+        
+    }
+}
+
+#edu1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
