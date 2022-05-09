@@ -1,0 +1,48 @@
+#div2{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#div2 p{
+    font-size: 20px;
+}
+
+.card{
+    margin: 20px auto;
+    width: 30%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#nav-div{
+    height: 100px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#div1{
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 750px){
+    body{
+        overflow-x: hidden;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
